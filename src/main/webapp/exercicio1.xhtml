@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+</h:head>
+
+<h:body>
+	<h:form>
+
+		<h:inputText name="primeiroValor" id="primeiroValor"
+			value="#{calculadora.primeiroValor}" />
+		<br />
+		<h:inputText name="segundoValor" id="segundoValor"
+			value="#{calculadora.segundoValor}" />
+		<br />
+		<h:commandButton name="somar" id="somar" 
+			 action="#{calculadora.somar}"	value="Somar" />
+		<h:commandButton name="subtrair" id="subtrair" value="Subtrair"
+			 action="#{calculadora.subtrair}" />
+		<h:commandButton name="multiplicar" id="multiplicar" value="Multiplicar"
+			 action="#{calculadora.multiplicar}" />
+		<h:commandButton name="dividir" id="dividir" value="Dividir"
+			 action="#{calculadora.dividir}" />
+		<br />
+		<h:outputLabel value="Resultado: #{calculadora.resultado}" />
+
+
+	</h:form>
+</h:body>
+
+</html>

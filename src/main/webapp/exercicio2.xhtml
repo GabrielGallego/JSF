@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+</head>
+	
+<body>
+	<h:form>
+
+		<h:inputText name="palavra" id="palavra"
+			value="#{palavras.palavra}" />
+		<h:commandButton name="Maiuscula" id="Maiscula" 
+			 action="#{palavras.maiuscula}"	value="Maiuscula" />
+		<h:commandButton name="Minuscula" id="Minuscula" 
+			 action="#{palavras.minuscula}"	value="Minuscula" /> <br/> <br/>
+		<h:outputText value="Resultado: #{palavras.resultado}" />
+		
+	</h:form>
+</body>
+</html>
